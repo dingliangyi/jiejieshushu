@@ -1,1 +1,16 @@
 host,ad.12306.cn,direct
+host-suffix, bing.com, 新加坡
+
+#广告域名
+host,qzs.qq.com,reject
+host, gateway.icloud.com.cn, direct
+host, bag.itunes.apple.com, direct
+# 腾讯视频
+host-suffix, pgdt.gtimg.cn, reject
+# reject
+host, file2.speedtest.cn, reject
+host-suffix, applovin.com, reject
+host-suffix, applvn.com, reject
+host-suffix, doubleclick.net, reject
+host-suffix, jdqd.jd.com, reject
+host-suffix, shouji.sougou.com, reject
