@@ -1,5 +1,5 @@
 # > Podcasts
-HOST-KEYWORD, amp-api.podcasts.apple.com
+HOST-SUFFIX, amp-api.podcasts.apple.com
 
 # > News
 HOST, gateway.icloud.com
