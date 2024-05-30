@@ -1,12 +1,19 @@
 host,ad.12306.cn,direct
 host-suffix, bing.com, 新加坡
 
-#广告域名
-host,qzs.qq.com,reject
-host, gateway.icloud.com.cn, direct
-host, bag.itunes.apple.com, direct
-# 腾讯视频
+# 京东比价
+host-suffix, cc.m.jd.com, direct
+
+# apple
+host, gateway.icloud.com.cn, Apple代理
+host, bag.itunes.apple.com, Apple代理
+host, xp.apple.com, Apple代理
+host, amp-api-edge.apps.apple.com, Apple代理
+
+# 腾讯
 host-suffix, pgdt.gtimg.cn, reject
+host,qzs.qq.com,reject
+
 # reject
 host, file2.speedtest.cn, reject
 host-suffix, applovin.com, reject
