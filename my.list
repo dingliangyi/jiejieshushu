@@ -1,9 +1,6 @@
 host,ad.12306.cn,direct
 host-suffix, bing.com, 新加坡
 
-# 京东比价
-host-suffix, cc.m.jd.com, direct
-
 # apple
 host, gateway.icloud.com.cn, Apple代理
 host, bag.itunes.apple.com, Apple代理
