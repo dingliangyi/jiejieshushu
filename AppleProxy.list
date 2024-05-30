@@ -1,29 +1,29 @@
 # > Podcasts
-;HOST-SUFFIX, amp-api.podcasts.apple.com
+HOST-SUFFIX, amp-api.podcasts.apple.com, Apple代理
 
 # > News
-HOST, gateway.icloud.com
-HOST-SUFFIX, apple.news
-HOST, news-assets.apple.com
-HOST, news-client.apple.com
-HOST, news-client-search.apple.com
-HOST, news-edge.apple.com
-HOST, news-events.apple.com
-HOST, apple.comscoreresearch.com
+HOST, gateway.icloud.com, Apple代理
+HOST-SUFFIX, apple.news, Apple代理
+HOST, news-assets.apple.com, Apple代理
+HOST, news-client.apple.com, Apple代理
+HOST, news-client-search.apple.com, Apple代理
+HOST, news-edge.apple.com, Apple代理
+HOST, news-events.apple.com, Apple代理
+HOST, apple.comscoreresearch.com, Apple代理
 
 # > TV
-USER-AGENT, AppleTV*
-USER-AGENT, com.apple.tv*
-HOST-SUFFIX, tv.apple.com
-HOST, hls.itunes.apple.com
-HOST, hls-amt.itunes.apple.com
-HOST, play-edge.itunes.apple.com
-HOST, tv.applemusic.com
-HOST, uts-api.itunes.apple.com
+USER-AGENT, AppleTV*, Apple代理
+USER-AGENT, com.apple.tv*, Apple代理
+HOST-SUFFIX, tv.apple.com, Apple代理
+HOST, hls.itunes.apple.com, Apple代理
+HOST, hls-amt.itunes.apple.com, Apple代理
+HOST, play-edge.itunes.apple.com, Apple代理
+HOST, tv.applemusic.com, Apple代理
+HOST, uts-api.itunes.apple.com, Apple代理
 
 # > Apple Books
-HOST, buy.itunes.apple.com
-HOST-SUFFIX, books.apple.com
-HOST, books.itunes.apple.com // iBooks Store download
-HOST, bookkeeper.itunes.apple.com
-HOST, books-analytics-events.apple.com
+HOST, buy.itunes.apple.com, Apple代理
+HOST-SUFFIX, books.apple.com, Apple代理
+HOST, books.itunes.apple.com, Apple代理 // iBooks Store download
+HOST, bookkeeper.itunes.apple.com, Apple代理
+HOST, books-analytics-events.apple.com, Apple代理
