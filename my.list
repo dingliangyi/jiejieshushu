@@ -2,7 +2,7 @@ host,ad.12306.cn,direct
 host-suffix, bing.com, 新加坡
 
 # apple
-host, gateway.icloud.com.cn, Apple代理
+host, gateway.icloud.com, Apple代理
 host, bag.itunes.apple.com, Apple代理
 host, xp.apple.com, Apple代理
 host, amp-api-edge.apps.apple.com, Apple代理
