@@ -1,5 +1,6 @@
 host,ad.12306.cn,direct
 host-suffix, bing.com, 新加坡
+host-suffix, ocoolai.com, 香港
 
 # apple
 host, gateway.icloud.com, Apple代理
