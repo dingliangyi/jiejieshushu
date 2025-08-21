@@ -63,7 +63,14 @@
 
             // 构造回应数据结构，与 Raycast 翻译 API 返回格式类似
             const respBody = {
-                translatedText: translated
+                data: {
+                    translations: [
+                        {
+                            translatedText: translated,
+                            detectedSourceLanguage: "en"
+                        }
+                    ]
+                }
             }
 
             $done({
