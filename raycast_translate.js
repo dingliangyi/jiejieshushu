@@ -23,8 +23,21 @@
         console.log("Text to translate:", textToTranslate)
 
         // 调用 OpenAI API
-        const openaiApiKey = "sk-hFkzyJWLf0i8Kf2XezlpX14POTC4TxnPxIWMHKYrXbQOawAq" // 请替换成你的密钥
-        const openaiUrl = "https://api.oaibest.com/v1/chat/completions"
+        const defaults = {
+            apiKey: "",
+            openaiUrl: "https://api.oaibest.com/v1/chat/completions"
+        }
+
+        let args = {}
+        try {
+            args = $argument ? JSON.parse($argument) : {}
+        } catch {
+            args = {}
+        }
+
+        const cfg = { ...defaults, ...args }
+        const openaiApiKey = cfg.apiKey
+        const openaiUrl = cfg.openaiUrl
 
         const openaiReq = {
             url: openaiUrl,
