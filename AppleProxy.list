@@ -27,3 +27,15 @@ HOST-SUFFIX, books.apple.com, Apple代理
 HOST, books.itunes.apple.com, Apple代理 // iBooks Store download
 HOST, bookkeeper.itunes.apple.com, Apple代理
 HOST, books-analytics-events.apple.com, Apple代理
+
+# > AppleIntelligence分流
+DOMAIN-SUFFIX, gateway.icloud.com
+DOMAIN-SUFFIX, apple-relay.apple.com
+DOMAIN-SUFFIX, apple-relay.fastly-edge.com
+DOMAIN-SUFFIX, apple-relay.cloudflare.com
+DOMAIN-SUFFIX, guzzoni.apple.com
+DOMAIN-SUFFIX, cp4.cloudflare.com
+DOMAIN-SUFFIX, gspe1-ssl.ls.apple.com
+DOMAIN-SUFFIX, smoot.apple.com
+DOMAIN-SUFFIX, apple-relay.akamaized.net
+DOMAIN-SUFFIX, apple-relay.mask.apple-dns.net
