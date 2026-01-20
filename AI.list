@@ -41,12 +41,12 @@ DOMAIN-SUFFIX,aistudio.google.com
 DOMAIN-SUFFIX,gemini.google.com
 DOMAIN,jules.google.com
 DOMAIN-SUFFIX,bard.google.com
-DOMAIN-KEYWORD,alkalimakersuite-pa.clients6.google.com
+DOMAIN-SUFFIX,alkalimakersuite-pa.clients6.google.com
 DOMAIN-SUFFIX,apis.google.com
 DOMAIN-SUFFIX,clients4.google.com
 DOMAIN-SUFFIX,deepmind.com
 DOMAIN-SUFFIX,colab.google.com
-OMAIN-SUFFIX,colab.research.google.com
+DOMAIN-SUFFIX,colab.research.google.com
 DOMAIN-SUFFIX,developerprofiles.google.com
 DOMAIN-SUFFIX,googleusercontent.com
 
