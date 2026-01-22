@@ -38,6 +38,7 @@
         const cfg = { ...defaults, ...args }
         const openaiApiKey = cfg.apiKey
         const openaiUrl = cfg.openaiUrl
+        const model = cfg.model
 
         const openaiReq = {
             url: openaiUrl,
@@ -46,7 +47,7 @@
                 Authorization: "Bearer " + openaiApiKey
             },
             body: JSON.stringify({
-                model: "gpt-4.1-2025-04-14",
+                model: model,
                 messages: [
                     // { role: "system", content: "" },
                     {
