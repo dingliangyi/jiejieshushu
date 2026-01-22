@@ -1,0 +1,82 @@
+# > App Store
+DOMAIN, iosapps-ssl.itunes.apple.com
+DOMAIN, itcmobile.itunes.apple.com
+DOMAIN, ppq.apple.com
+DOMAIN-SUFFIX, apps.apple.com
+DOMAIN-SUFFIX, itunes.apple.com
+DOMAIN-SUFFIX, itunes-apple.com.akadns.net
+DOMAIN-SUFFIX, mzstatic.com
+DOMAIN-SUFFIX, blobstore.apple.com
+USER-AGENT,com.apple.appstored*
+
+# > iCloud
+DOMAIN-SUFFIX, icloud.apple.com
+DOMAIN-SUFFIX, icloud.com
+DOMAIN-SUFFIX, icloud.com.cn
+DOMAIN-SUFFIX, icloud-content.com
+DOMAIN-KEYWORD, icloud.com.akadns.net
+DOMAIN-SUFFIX, apple-cloudkit.com
+DOMAIN-SUFFIX, apple-livephotoskit.com
+DOMAIN-SUFFIX, apzones.com
+DOMAIN-SUFFIX, cdn-apple.com
+DOMAIN-SUFFIX, gc.apple.com
+DOMAIN-SUFFIX, iwork.apple.com
+
+# > iCloud email
+DOMAIN-SUFFIX, mail.me.com
+
+# > Apple URL Shortener
+DOMAIN-SUFFIX, appsto.re
+
+# > Spotlight
+DOMAIN-SUFFIX, smoot.apple.com
+
+# > 查找 / 定位服务
+USER-AGENT, *FindMyiPhone?
+USER-AGENT, FindMyiPhone*
+USER-AGENT, FindMyFriends*
+USER-AGENT, FMDClient*
+USER-AGENT, FMFD*
+USER-AGENT, fmflocatord*
+USER-AGENT, locationd*
+USER-AGENT, geod*
+
+# > Maps
+USER-AGENT,*com.apple.Maps?
+USER-AGENT,Maps*
+USER-AGENT,com.apple.Maps
+
+# > Weather
+USER-AGENT,*WeatherFoundation*
+
+# > Apple Pay
+USER-AGENT,Wallet*
+USER-AGENT,passd*
+
+# > 系统安全 / 证书校验
+USER-AGENT,com.apple.trustd*
+
+# > Apple 网络基础设施
+DOMAIN-KEYWORD,apple.com.edgekey.net
+IP-CIDR,17.0.0.0/8,no-resolve
+IP-CIDR,139.178.128.0/18,no-resolve
+IP-CIDR,144.178.0.0/19,no-resolve
+IP-CIDR,144.178.36.0/22,no-resolve
+IP-CIDR,144.178.48.0/20,no-resolve
+IP-CIDR,192.35.50.0/24,no-resolve
+IP-CIDR,198.183.17.0/24,no-resolve
+IP-CIDR,205.180.175.0/24,no-resolve
+IP-CIDR,63.92.224.0/19,no-resolve
+IP-CIDR,65.199.22.0/23,no-resolve
+
+# > AppleID
+DOMAIN,appleid.apple.com
+DOMAIN,appleid.cdn-apple.com
+DOMAIN,gsa.apple.com
+DOMAIN,idmsa.apple.com
+
+# > other
+DOMAIN-KEYWORD, smp-device
+DOMAIN-KEYWORD, apple.com.akadns.net
+DOMAIN-KEYWORD, apple-support.akadns.net
+USER-AGENT, com.apple.mobileme.fmip1

@@ -1,35 +1,54 @@
+# > icloud
+DOMAIN-SUFFIX, gateway.icloud.com
+
+# > App Store
+DOMAIN, appstoreconnect.apple.com
+
+# > TestFlight
+DOMAIN, testflight.apple.com
+DOMAIN-KEYWORD,testflight
+
+# > Apple music
+DOMAIN, aod-ssl.itunes.apple.com
+DOMAIN, aod.itunes.apple.com
+DOMAIN, audio-ssl.itunes.apple.com
+DOMAIN, audio.itunes.apple.com
+DOMAIN, mvod.itunes.apple.com
+DOMAIN, streamingaudio.itunes.apple.com
+DOMAIN-SUFFIX, applemusic.com
+DOMAIN-SUFFIX, blobstore.apple.com
+DOMAIN-SUFFIX, music.apple.com
+USER-AGENT, Music*
+
 # > Podcasts
-HOST-SUFFIX, amp-api.podcasts.apple.com, Apple代理
+DOMAIN-SUFFIX, amp-api.podcasts.apple.com
 
 # > News
-HOST, gateway.icloud.com, Apple代理
-HOST-SUFFIX, apple.news, Apple代理
-HOST, news-assets.apple.com, Apple代理
-HOST, news-client.apple.com, Apple代理
-HOST, news-client-search.apple.com, Apple代理
-HOST, news-edge.apple.com, Apple代理
-HOST, news-events.apple.com, Apple代理
-HOST, apple.comscoreresearch.com, Apple代理
+DOMAIN-SUFFIX, apple.news
+DOMAIN, news-assets.apple.com
+DOMAIN, news-client.apple.com
+DOMAIN, news-client-search.apple.com
+DOMAIN, news-edge.apple.com
+DOMAIN, news-events.apple.com
+DOMAIN, apple.comscoreresearch.com
 
 # > TV
-USER-AGENT, AppleTV*, Apple代理
-USER-AGENT, com.apple.tv*, Apple代理
-HOST-SUFFIX, tv.apple.com, Apple代理
-HOST, hls.itunes.apple.com, Apple代理
-HOST, hls-amt.itunes.apple.com, Apple代理
-HOST, play-edge.itunes.apple.com, Apple代理
-HOST, tv.applemusic.com, Apple代理
-HOST, uts-api.itunes.apple.com, Apple代理
+USER-AGENT, AppleTV*
+USER-AGENT, com.apple.tv*
+DOMAIN-SUFFIX, tv.apple.com
+DOMAIN, hls.itunes.apple.com
+DOMAIN, hls-amt.itunes.apple.com
+DOMAIN, play-edge.itunes.apple.com
+DOMAIN, uts-api.itunes.apple.com
 
 # > Apple Books
-HOST, buy.itunes.apple.com, Apple代理
-HOST-SUFFIX, books.apple.com, Apple代理
-HOST, books.itunes.apple.com, Apple代理 // iBooks Store download
-HOST, bookkeeper.itunes.apple.com, Apple代理
-HOST, books-analytics-events.apple.com, Apple代理
+DOMAIN, buy.itunes.apple.com
+DOMAIN-SUFFIX, books.apple.com
+DOMAIN, books.itunes.apple.com
+DOMAIN, bookkeeper.itunes.apple.com
+DOMAIN, books-analytics-events.apple.com
 
 # > AppleIntelligence分流
-DOMAIN-SUFFIX, gateway.icloud.com
 DOMAIN-SUFFIX, apple-relay.apple.com
 DOMAIN-SUFFIX, apple-relay.fastly-edge.com
 DOMAIN-SUFFIX, apple-relay.cloudflare.com
@@ -39,3 +58,7 @@ DOMAIN-SUFFIX, gspe1-ssl.ls.apple.com
 DOMAIN-SUFFIX, smoot.apple.com
 DOMAIN-SUFFIX, apple-relay.akamaized.net
 DOMAIN-SUFFIX, apple-relay.mask.apple-dns.net
+
+# > Fitness+
+DOMAIN, hls-svod.itunes.apple.com
+DOMAIN, amp-api.fitness.apple.com
