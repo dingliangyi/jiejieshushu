@@ -24,8 +24,8 @@
 
         // 调用 OpenAI API
         const defaults = {
-            apiKey: "",
-            openaiUrl: "https://api.oaibest.com/v1/chat/completions"
+            openaiUrl: "https://api.oaibest.com/v1/chat/completions",
+            model:"gpt-5.2-chat-latest"
         }
 
         let args = {}
