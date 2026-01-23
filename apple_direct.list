@@ -80,3 +80,6 @@ DOMAIN-KEYWORD, smp-device
 DOMAIN-KEYWORD, apple.com.akadns.net
 DOMAIN-KEYWORD, apple-support.akadns.net
 USER-AGENT, com.apple.mobileme.fmip1
+
+# All
+DOMAIN-KEYWORD, apple
