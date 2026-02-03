@@ -1,0 +1,22 @@
+DOMAIN-KEYWORD,kraken
+
+# 灰度发布 / 功能开关
+DOMAIN-SUFFIX,launchdarkly.com
+
+# 客服 / 即时聊天系统
+DOMAIN-SUFFIX,smooch.io
+DOMAIN-SUFFIX,zendesk.com
+
+# 推送 & 用户生命周期管理
+DOMAIN-SUFFIX,braze.com
+
+# 强风控 / 反欺诈
+DOMAIN-SUFFIX,sardine.ai
+
+# 中度相关（行为 & 异常）
+# 用户行为埋点 / 数据分析（风控的“数据来源”）
+DOMAIN-SUFFIX,segment.io
+# 崩溃 & 异常监控（安全辅助）
+DOMAIN-SUFFIX,sentry.io
+# 归因 / 设备指纹（⚠️ 风控边缘）
+DOMAIN-SUFFIX,appsflyersdk.com
