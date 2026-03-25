@@ -19,35 +19,49 @@ DOMAIN-SUFFIX,sentry.io
 DOMAIN-SUFFIX,stripe.com
 
 # > Google
-DOMAIN-SUFFIX,generativeai.google
-DOMAIN,antigravity.google
-DOMAIN,antigravity-unleash.goog
-DOMAIN-SUFFIX,notebooklm.google
-DOMAIN-SUFFIX,deepmind.google
+# Gemini
+DOMAIN-SUFFIX,bard.google.com
 DOMAIN-SUFFIX,gemini.google
-DOMAIN,ai.google.dev
-DOMAIN-SUFFIX,proactivebackend-pa.googleapis.com
-DOMAIN-SUFFIX,generativelanguage.googleapis.com
-DOMAIN,daily-cloudcode-pa.googleapis.com
-DOMAIN,robinfrontend-pa.googleapis.com
-DOMAIN-SUFFIX,cloudcode-pa.googleapis.com
+DOMAIN-SUFFIX,gemini.google.com
 DOMAIN,aisandbox-pa.googleapis.com
+DOMAIN,robinfrontend-pa.googleapis.com
+URL-REGEX,https://www\.google\.com/.*continue=https://gemini\.google\.com.+
+# DeepMind
+DOMAIN-SUFFIX,deepmind.com
+DOMAIN-SUFFIX,deepmind.google
+# Generative Language API
+DOMAIN-SUFFIX,generativelanguage.googleapis.com
 DOMAIN-SUFFIX,geller-pa.googleapis.com
-DOMAIN,aida.googleapis.com
-DOMAIN-SUFFIX,notebooklm.google.com
+DOMAIN-SUFFIX,proactivebackend-pa.googleapis.com
+DOMAIN-SUFFIX,cloudcode-pa.googleapis.com
+# Google AI Studio
+DOMAIN,ai.google.dev
+DOMAIN-SUFFIX,g.ai
+DOMAIN-SUFFIX,aistudio.google.com
 DOMAIN-SUFFIX,makersuite.google.com
 DOMAIN,alkalicore-pa.clients6.google.com
-DOMAIN-SUFFIX,aistudio.google.com
-DOMAIN-SUFFIX,gemini.google.com
-DOMAIN,jules.google.com
-DOMAIN-SUFFIX,bard.google.com
 DOMAIN-SUFFIX,alkalimakersuite-pa.clients6.google.com
-DOMAIN-SUFFIX,apis.google.com
-DOMAIN-SUFFIX,clients4.google.com
-DOMAIN-SUFFIX,deepmind.com
+DOMAIN-SUFFIX,generativeai.google
+# NotebookLM
+DOMAIN-SUFFIX,notebooklm.google
+DOMAIN-SUFFIX,notebooklm.google.com
+# Jules
+DOMAIN,jules.google.com
+# Android Studio
+DOMAIN,aida.googleapis.com
+# Antigravity
+DOMAIN,antigravity.google
+DOMAIN,antigravity-unleash.goog
+DOMAIN,daily-cloudcode-pa.googleapis.com
+# Google Colab 
 DOMAIN-SUFFIX,colab.google.com
 DOMAIN-SUFFIX,colab.research.google.com
+# Google 基础 API 与客户端服务
+DOMAIN-SUFFIX,apis.google.com
+DOMAIN-SUFFIX,clients4.google.com
+# Google 开发者服务
 DOMAIN-SUFFIX,developerprofiles.google.com
+# Google 用户生成内容 (CDN / 托管)
 DOMAIN-SUFFIX,googleusercontent.com
 
 # > Claude
@@ -60,12 +74,15 @@ DOMAIN-SUFFIX,claudeusercontent.com
 # > ChatGPT
 DOMAIN-SUFFIX,sora.com
 DOMAIN-KEYWORD,openai
+DOMAIN-KEYWORD,openaicom
+DOMAIN-KEYWORD,openaiapi
 DOMAIN-SUFFIX,chatgpt.com
 DOMAIN-SUFFIX,livekit.cloud
 DOMAIN-SUFFIX,oaistatic.com
 DOMAIN-SUFFIX,oaiusercontent.com
 DOMAIN-SUFFIX,azureedge.net
 DOMAIN-SUFFIX,imgix.net
+DOMAIN-SUFFIX,chat.com
 
 # > Microsoft Copilot
 DOMAIN,api.msn.com
@@ -84,3 +101,40 @@ DOMAIN,www.bing.com
 DOMAIN-SUFFIX,api.microsoftapp.net
 DOMAIN-SUFFIX,bing-shopping.microsoft-falcon.io
 DOMAIN-SUFFIX,edgeservices.bing.com
+
+# >> Perplexity
+DOMAIN-SUFFIX,perplexity.ai
+
+# >> POE
+DOMAIN-SUFFIX,poe.com
+
+# >> Meta AI
+DOMAIN-SUFFIX,meta.ai
+
+# >> Cloudflare AI Gateway
+DOMAIN,gateway.ai.cloudflare.com
+
+# >> Dify.AI
+DOMAIN-SUFFIX,dify.ai
+
+# >> Jasper
+DOMAIN-SUFFIX,clipdrop.co
+DOMAIN-SUFFIX,jasper.ai
+
+# >> OpenArt
+DOMAIN-SUFFIX,openart.ai
+
+# >> GitHub Copilot
+# api.*.githubcopilot.com is not required, since the ip & asn information are coming from api.github.com
+# see https://github.com/SukkaW/Surge/pull/46#discussion_r1849641627
+DOMAIN,api.github.com
+
+# >> Grok
+DOMAIN-SUFFIX,grok.com
+DOMAIN-SUFFIX,x.ai
+
+# >> groq
+DOMAIN-SUFFIX,groq.com
+
+# >> JetBrains AI
+DOMAIN,api.jetbrains.ai
