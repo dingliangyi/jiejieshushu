@@ -70,19 +70,23 @@ DOMAIN-SUFFIX,claude.com
 DOMAIN-SUFFIX,claude.ai
 DOMAIN,cdn.usefathom.com
 DOMAIN-SUFFIX,claudeusercontent.com
+DOMAIN-SUFFIX, clau.de
+IP-CIDR, 160.79.104.0/23, no-resolve
+IP-CIDR6, 2607:6bc0::/48, no-resolve
 
 # > ChatGPT
 DOMAIN-SUFFIX,sora.com
 DOMAIN-KEYWORD,openai
-DOMAIN-KEYWORD,openaicom
-DOMAIN-KEYWORD,openaiapi
 DOMAIN-SUFFIX,chatgpt.com
-DOMAIN-SUFFIX,livekit.cloud
 DOMAIN-SUFFIX,oaistatic.com
 DOMAIN-SUFFIX,oaiusercontent.com
-DOMAIN-SUFFIX,azureedge.net
 DOMAIN-SUFFIX,imgix.net
 DOMAIN-SUFFIX,chat.com
+AND, ((DOMAIN-KEYWORD, chatgpt-async-webps-prod-), (DOMAIN-SUFFIX, webpubsub.azure.com))
+AND, ((DOMAIN-KEYWORD, openaicom-api-), (DOMAIN-SUFFIX, azurefd.net))
+DOMAIN, chatgpt.livekit.cloud
+DOMAIN, host.livekit.cloud
+DOMAIN-SUFFIX, turn.livekit.cloud
 
 # > Microsoft Copilot
 DOMAIN,api.msn.com
@@ -93,17 +97,18 @@ DOMAIN,gateway.bingviz.microsoftapp.net
 DOMAIN,in.appcenter.ms
 DOMAIN,location.microsoft.com
 DOMAIN,odc.officeapps.live.com
-DOMAIN,r.bing.com
 DOMAIN,self.events.data.microsoft.com
 DOMAIN,services.bingapis.com
-DOMAIN,sydney.bing.com
-DOMAIN,www.bing.com
 DOMAIN-SUFFIX,api.microsoftapp.net
 DOMAIN-SUFFIX,bing-shopping.microsoft-falcon.io
-DOMAIN-SUFFIX,edgeservices.bing.com
+DOMAIN-SUFFIX,bing.com
+DOMAIN,copilot-proxy.githubusercontent.com
+DOMAIN-SUFFIX,githubcopilot.com
 
 # >> Perplexity
+DOMAIN-SUFFIX,pplx.ai
 DOMAIN-SUFFIX,perplexity.ai
+DOMAIN-SUFFIX,perplexity.com
 
 # >> POE
 DOMAIN-SUFFIX,poe.com
@@ -137,4 +142,6 @@ DOMAIN-SUFFIX,x.ai
 DOMAIN-SUFFIX,groq.com
 
 # >> JetBrains AI
-DOMAIN,api.jetbrains.ai
+DOMAIN-SUFFIX,grazie.ai
+DOMAIN-SUFFIX,grazie.aws.intellij.net
+DOMAIN-SUFFIX,jetbrains.ai
