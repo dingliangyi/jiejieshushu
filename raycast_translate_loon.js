@@ -9,6 +9,7 @@
 
 (async function () {
   try {
+    const cfg_ = JSON.parse($config.getConfig());
     const bodyStr = $request.body || "";
     console.log(`Original body: ${bodyStr}`);
 
@@ -46,8 +47,8 @@
     }
 
     const defaults = {
-      apiKey: "",
-      openaiUrl: "https://api.tu-zi.com/v1/chat/completions"
+      apiKey: "sk-LZOyJ0JDVOLc4z74ThAeCCvkhNGvWpdojd1LgATA9PTHOO5R",
+      openaiUrl: "https://api.yourapi.cn/v1/chat/completions"
     };
 
     let args = {};
@@ -93,7 +94,7 @@
         "Authorization": "Bearer " + openaiApiKey
       },
       body: JSON.stringify({
-        model: "gpt-5.4-mini",
+        model: "gemini-3.5-flash",
         messages: [
           {
             role: "user",
@@ -102,13 +103,17 @@
           }
         ]
       }),
-      timeout: 60
+      timeout: 10000,
+      node: cfg_.final
     };
 
     $httpClient.post(openaiReq, (error, response, data) => {
       try {
         if (error) {
-          console.log(`Request error: ${JSON.stringify(error)}`);
+          console.log("Request error raw: " + String(error));
+          console.log("Response status: " + (response ? response.status : "NO_RESPONSE"));
+          console.log("Response body: " + String(data || ""));
+
           return $done({
             response: {
               status: 200,
@@ -119,11 +124,11 @@
                 data: {
                   translations: [
                     {
-                      translatedText: "翻译请求失败"
+                      translatedText: "失败: " + String(error)
                     }
                   ]
                 }
-              })
+             })
             }
           });
         }
