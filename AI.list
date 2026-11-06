@@ -1,10 +1,8 @@
 # > Ai general rules
 DOMAIN,api.statsig.com
 DOMAIN,browser-intake-datadoghq.com
-DOMAIN,static.cloudflareinsights.com
 DOMAIN-SUFFIX,algolia.net
 DOMAIN-SUFFIX,auth0.com
-DOMAIN-SUFFIX,cloudflare.com
 DOMAIN-SUFFIX,arkoselabs.com
 DOMAIN-SUFFIX,statsigapi.net
 DOMAIN-SUFFIX,featuregates.org
@@ -110,24 +108,8 @@ DOMAIN-SUFFIX,pplx.ai
 DOMAIN-SUFFIX,perplexity.ai
 DOMAIN-SUFFIX,perplexity.com
 
-# >> POE
-DOMAIN-SUFFIX,poe.com
-
 # >> Meta AI
 DOMAIN-SUFFIX,meta.ai
-
-# >> Cloudflare AI Gateway
-DOMAIN,gateway.ai.cloudflare.com
-
-# >> Dify.AI
-DOMAIN-SUFFIX,dify.ai
-
-# >> Jasper
-DOMAIN-SUFFIX,clipdrop.co
-DOMAIN-SUFFIX,jasper.ai
-
-# >> OpenArt
-DOMAIN-SUFFIX,openart.ai
 
 # >> GitHub Copilot
 # api.*.githubcopilot.com is not required, since the ip & asn information are coming from api.github.com
@@ -137,9 +119,6 @@ DOMAIN,api.github.com
 # >> Grok
 DOMAIN-SUFFIX,grok.com
 DOMAIN-SUFFIX,x.ai
-
-# >> groq
-DOMAIN-SUFFIX,groq.com
 
 # >> JetBrains AI
 DOMAIN-SUFFIX,grazie.ai
