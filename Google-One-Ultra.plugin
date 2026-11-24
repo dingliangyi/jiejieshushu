@@ -1,0 +1,9 @@
+#!name=Google One Ultra 商品重写
+#!desc=按教程重写 Google One AI 订阅页面中的 20TB 和 30TB 商品 ID
+#!homepage=https://x.com/yangleiocx3/status/2124350908263723508
+
+[Rewrite]
+^https://one\.google\.com/ai\? response-body-replace-regex 30tb\.ai\.pro\.m 30tb.m 20tb\.m\.v2 20tb.m
+
+[MitM]
+hostname = one.google.com
