@@ -1,0 +1,16 @@
+#!name=G1 ACQ v7.6.0
+#!desc=支持 Ultra 1 个月免费试用、2TB 12 个月优惠测试、被动采集与本地报告
+#!homepage=https://github.com/crhywun/g1-acq
+#!author=crhywun
+#!system=ios
+
+[Rule]
+# 全局拦截 UDP 443，促使支持回退的 HTTP/3 请求改走 TCP。
+AND,((PROTOCOL,UDP),(DEST-PORT,443)),REJECT-NO-DROP
+
+[Script]
+http-response ^https:\/\/one\.google\.com\/ script-path=https://cdn.jsdelivr.net/gh/crhywun/g1-acq@v7.6.0/g1-acq.js, requires-body=true, timeout=10, tag=g1-acq
+http-request ^https:\/\/one\.google\.com\/g1-sku-report\/?(?:\?.*)?$ script-path=https://cdn.jsdelivr.net/gh/crhywun/g1-acq@v7.6.0/g1-sku-report.js, timeout=10, tag=g1-sku-report
+
+[MitM]
+hostname = one.google.com
